@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url('../assets/fonts/frizQuadrata.otf');
+}
+
+html,
+body {
+    background: rgb(28, 8, 53);
+    opacity: 5;
+    font-family: 'Friz Quadrata', 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.header {
+    box-shadow: -2px 1px 5px 1px rgba(100, 83, 7, 0.35);
+    border-radius: 10px;
+    margin: 10px;
+    top: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    background: rgba(28, 8, 53, 0.9);
+}
+
+#icon,
+#name,
+#tier {
+    display: inline-block;
+}
+
+#icon {
+    border-radius: 999px;
+    margin: 8px;
+    width: 8rem;
+    height: 8rem;
+}
+
+#name {
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 70%;
+    font-weight: 80;
+    font-size: 6rem;
+    text-shadow: 0.6px 0.6px rgba(170, 170, 170, 0.6);
+}
+
+#tier {
+    margin-right: 8px;
+    margin-top: 20px;
+    float: right;
+}
+
+a[aria-expanded="false"]:focus {
+    outline: 0px;
+}
+
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+    text-transform: none;
+}
+
+.card-body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.6rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 6px;
+    border: 3px solid rgba(100, 83, 7, 0.35);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#btn_origin,
+#btn_class,
+#btn_ability,
+#btn_stats,
+#btn_build {
+    font-size: 2.5rem;
+    width: 95%;
+    color: white;
+    text-align: left;
+}
+
+#btn_origin:after,
+#btn_class:after,
+#btn_ability:after,
+#btn_stats:after,
+#btn_build:after {
+    font-family: FontAwesome;
+    content: "\f107";
+    float: right;
+    color: white;
+}
+
+/*ScrollBar*/
+
+/* width */
+::-webkit-scrollbar {
+    -webkit-app-region: no-drag;
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/info.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="" alt="" id="icon" />
+        <h1 id="name"></h1>
+        <img src="" alt="" id="tier" />
+    </div>
+
+    <!--MAIN INFO-->
+
+    <div class="accordion" id="champ_info">
+        <div class="card">
+            <div class="card-header" id="head_origin">
+                <h3 class="mb-0 h3">
+                    <a id="btn_origin" class="btn btn-link" type="button" data-toggle="collapse" data-target="#origin"
+                        aria-expanded="true" aria-controls="origin">
+                        Origen
+                    </a>
+                </h3>
+            </div>
+
+            <div id="origin" class="collapse" aria-labelledby="head_origin" data-parent="#champ_info">
+                <div class="card-body" id="info_origin">
+                    <!--Aquí van los orígenes-->
+                    <div id="related_champs">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="head_classes">
+                <h3 class="mb-0 h3">
+                    <a id="btn_class" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#classes" aria-expanded="false" aria-controls="classes">
+                        Clase
+                    </a>
+                </h3>
+            </div>
+            <div id="classes" class="collapse" aria-labelledby="head_classes" data-parent="#champ_info">
+                <div class="card-body" id="info_classes">
+                    <!--Aquí van las clases (A ver como apañamos esto).-->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="head_ability">
+                <h3 class="mb-0 h3">
+                    <a id="btn_ability" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#ability" aria-expanded="false" aria-controls="ability">
+                        Habilidad
+                    </a>
+                </h3>
+            </div>
+            <div id="ability" class="collapse" aria-labelledby="head_ability" data-parent="#champ_info">
+                <div class="card-body" id="info_ability">
+                    <!--Aquí va la información de la habilidad: icono, descripción, y daño por nivel.-->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="head_stats">
+                <h3 class="mb-0 h3">
+                    <a id="btn_stats" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#stats" aria-expanded="false" aria-controls="stats">
+                        Estadísticas
+                    </a>
+                </h3>
+            </div>
+            <div id="stats" class="collapse" aria-labelledby="head_stats" data-parent="#champ_info">
+                <div class="card-body" id="info_stats">
+                    Aquí van las estadísticas. Hay que dividirlas por niveles mediante algún menú reshu.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="head_build">
+                <h3 class="mb-0 h3">
+                    <a id="btn_build" class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#build" aria-expanded="false" aria-controls="build">
+                        Items Recomendados
+                    </a>
+                </h3>
+            </div>
+            <div id="build" class="collapse" aria-labelledby="head_build" data-parent="#champ-info">
+                <div class="card-body" id="info_build">
+                    Aquí van los items recomendados para buildear al campeón.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--BOOTSTRAP-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+
+    <!--MY SCRIPTS-->
+    <script src="../js/info.js"></script>
+</body>
+
+</html>

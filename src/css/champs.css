@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url('../assets/fonts/frizQuadrata.otf');
+}
+
+html,
+body {
+    background: rgb(28, 8, 53);
+    opacity: 5;
+    font-family: 'Friz Quadrata', 'Courier New', Courier, monospace;
+}
+
+.stick {
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 10px;
+    bottom: 10px;
+}
+
+.btn {
+    background-color: #5d5179;
+    border: 2px solid #5d5179;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #571F4E;
+    border: 2px solid #571F4E;
+}
+
+.btn:active {
+    background-color: rgba(170, 170, 170, 0.7);
+    border: 2px solid rgba(170, 170, 170, 0.7);
+    box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 2);
+}
+
+div {
+    text-align: center;
+}
+
+[id^="info-"] {
+    display: none;
+}
+
+.row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header {
+    align-content: center;
+}
+
+.h1 {
+    color: #f1f1f1;
+}
+
+/*ScrollBar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

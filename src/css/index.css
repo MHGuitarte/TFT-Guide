@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url('../assets/fonts/frizQuadrata.otf');
+}
+
+body {
+    background: rgb(28, 8, 53);
+    font-family: 'Friz Quadrata', 'Courier New', Courier, monospace;
+    background-image: url('https://nexus.leagueoflegends.com/wp-content/uploads/2019/07/01_Nexus_Top_Image-1_ufys84msalpml4qyp3dp.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 5;
+
+}
+
+#logo {
+    padding-top: 0.2rem;
+    height: 16rem;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    align-content: center;
+    display: block;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-left: -2rem;
+    padding-left: -2rem;
+}
+
+.end-section {
+    width: 20%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+#champs,
+#items,
+#builds,
+#tiers,
+#exit {
+    font-size: 1.5rem;
+    height: 3rem;
+    background-color: #5d5179;
+    border: 2px solid #5d5179;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#champs:hover,
+#items:hover,
+#builds:hover,
+#tiers:hover,
+#exit:hover {
+    background-color: #571F4E;
+    border: 2px solid #571F4E;
+}
+
+#champs:active,
+#items:active,
+#builds:active,
+#tiers:active,
+#exit:active {
+    background-color: rgba(170, 170, 170, 0.7);
+    border: 2px solid rgba(170, 170, 170, 0.7);
+    box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 2);
+}
