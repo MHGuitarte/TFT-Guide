@@ -18,6 +18,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     background-color: #5d5179;
     border: 2px solid #5d5179;
     color: white;
@@ -48,6 +49,7 @@ div {
 }
 
 .header {
+    -webkit-app-region: drag;
     align-content: center;
 }
 

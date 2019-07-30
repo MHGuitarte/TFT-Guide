@@ -11,6 +11,32 @@ body {
     color: white;
 }
 
+.stick {
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 10px;
+    bottom: 10px;
+}
+
+#btn_back {
+    border-radius: 10px;
+    background-color: #5d5179;
+    border: 2px solid #5d5179;
+    color: white;
+    vertical-align: bottom;
+}
+
+#btn_back:hover {
+    background-color: #571F4E;
+    border: 2px solid #571F4E;
+}
+
+#btn_back:active {
+    background-color: rgba(170, 170, 170, 0.7);
+    border: 2px solid rgba(170, 170, 170, 0.7);
+    box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 2);
+}
+
 .header {
     box-shadow: -2px 1px 5px 1px rgba(100, 83, 7, 0.35);
     border-radius: 10px;
@@ -106,12 +132,34 @@ h3 {
     color: white;
 }
 
+table {
+    width: 60%;
+}
+
+.originInfo {
+    margin: 2rem;
+    display: inline-block;
+}
+
+.originDesc {
+    margin: 2rem;
+    text-justify: distribute-all-lines;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.originLvl {
+    vertical-align: middle;
+    margin: 2rem;
+    width: 100%;
+}
+
 /*ScrollBar*/
 
 /* width */
 ::-webkit-scrollbar {
     -webkit-app-region: no-drag;
-    width: 8px;
+    width: 5px;
 }
 
 /* Track */

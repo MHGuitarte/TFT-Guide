@@ -15,6 +15,7 @@ body {
 }
 
 #logo {
+    -webkit-app-region: drag;
     padding-top: 0.2rem;
     height: 16rem;
     width: 40%;

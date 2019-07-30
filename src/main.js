@@ -76,9 +76,9 @@ function newInfo(args) {
 
   mainWindow.setTitle(String(args));
 
-  mainWindow.on('page-title-updated', (evt) => {
+  /*mainWindow.on('page-title-updated', (evt) => {
     evt.preventDefault();
-  });
+  });*/
 
 }
 
