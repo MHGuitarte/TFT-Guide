@@ -11,6 +11,10 @@ body {
     color: white;
 }
 
+img {
+    margin: 1rem;
+}
+
 .stick {
     position: -webkit-sticky;
     position: sticky;
@@ -132,26 +136,13 @@ h3 {
     color: white;
 }
 
-table {
-    width: 60%;
-}
-
-.originInfo {
-    margin: 2rem;
+.originInfo, .origin2Info {
     display: inline-block;
 }
 
-.originDesc {
-    margin: 2rem;
-    text-justify: distribute-all-lines;
-    vertical-align: middle;
-    width: 80%;
-}
-
-.originLvl {
-    vertical-align: middle;
-    margin: 2rem;
-    width: 100%;
+#originList, #origin2List {
+    background: rgb(28, 8, 53);
+    border: none;
 }
 
 /*ScrollBar*/
